@@ -1,0 +1,23 @@
+header:
+  version: 14
+
+machine: raspberrypi4
+distro: poky
+target: core-image-minimal
+
+repos:
+  meta-pipi:
+
+  poky:
+    url: https://git.yoctoproject.org/poky
+    commit: fc697fe87412b9b179ae3a68d266ace85bb1fcc6
+    branch: kirkstone
+    layers:
+      meta:
+      meta-poky:
+
+  meta-raspberrypi:
+    url: https://git.yoctoproject.org/meta-raspberrypi
+    commit: 43683cb14b6afc144619335b3a2353b70762ff3e
+    branch: kirkstone
+
