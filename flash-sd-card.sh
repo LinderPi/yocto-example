@@ -34,4 +34,3 @@ else
     echo "- This script is not supported on your operating system ($OSTYPE)!"
     exit 1
 fi
-
