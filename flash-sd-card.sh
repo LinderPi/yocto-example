@@ -1,7 +1,7 @@
 #!/bin/bash
 
 path=$(readlink -f $(dirname $BASH_SOURCE))
-image_path=$path/build/tmp/deploy/images/raspberrypi4/core-image-minimal-raspberrypi4.wic.bz2
+image_path=$path/build/tmp/deploy/images/raspberrypi4/pipi-image-raspberrypi4.wic.bz2
 
 echo "Flash SD card ..."
 echo "- Path to image: $image_path"
