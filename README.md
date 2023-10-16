@@ -13,13 +13,13 @@ As the project builds upon [kas](https://github.com/siemens/kas), only a single 
 to create an image.
 
 ```bash
-kas build meta-pipi/kas-project.yml
+kas build kas-project.yml
 ```
 
 In order to have access to the usual bitbake commands, type something similar to one of the
 following into your console.
 
 ```bash
-kas shell meta-pipi/kas-project.yml
-kas shell meta-pipi/kas-project.yml -c 'bitbake -e pipi-image | grep ^IMAGE_INSTALL'
+kas shell kas-project.yml
+kas shell kas-project.yml -c 'bitbake -e pipi-image | grep ^IMAGE_INSTALL'
 ```
