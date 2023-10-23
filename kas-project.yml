@@ -2,7 +2,7 @@ header:
   version: 14
 
 machine: raspberrypi4
-distro: poky
+distro: pipi
 target: pipi-image
 
 repos:
@@ -14,7 +14,6 @@ repos:
     branch: kirkstone
     layers:
       meta:
-      meta-poky:
 
   meta-raspberrypi:
     url: https://git.yoctoproject.org/meta-raspberrypi
