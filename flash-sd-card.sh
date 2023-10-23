@@ -1,18 +1,25 @@
 #!/bin/bash
 
-path=$(readlink -f $(dirname $BASH_SOURCE))
-image_path=$path/build/tmp/deploy/images/raspberrypi4/pipi-image-raspberrypi4.wic.bz2
-
-echo "Flash SD card ..."
-echo "- Path to image: $image_path"
-
-if [[ ($# -lt 1) || !( -e $1) ]]; then
-    echo "- Please provide file path to SD card block device as argument!"
+if [[ $# -lt 2 ]]; then
+    echo "- Please provide image name as first argument!"
+    echo "- Please provide file path to SD card block device as second argument!"
     exit 1
 fi
 
-sd_path=$1
+path=$(readlink -f $(dirname $BASH_SOURCE))
+image_path=$path/build/tmp/deploy/images/raspberrypi4/$1-raspberrypi4.wic.bz2
+sd_path=$2
 
+if [[ !(-e $image_path) ]]; then
+    echo "- Image at $image_path does not exist!"
+    exit 1
+elif [[ !(-e $sd_path) ]]; then
+    echo "- Provided SD card block device is not a file path!"
+    exit 1
+fi
+
+echo "Flash SD card ..."
+echo "- Path to image: $image_path"
 echo "- Path to SD card: $sd_path"
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
