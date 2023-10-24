@@ -21,5 +21,6 @@ repos:
     branch: kirkstone
 
 local_conf_header:
-  meta-pipi:
+  meta-pipi: |
     ENABLE_UART = "1"
+    RPI_USE_U_BOOT = "1"
