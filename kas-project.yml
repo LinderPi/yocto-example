@@ -15,9 +15,24 @@ repos:
     layers:
       meta:
 
+  meta-openembedded:
+    url: https://git.openembedded.org/meta-openembedded
+    commit: 79a6f60dabad9e5b0e041efa91379447ef030482
+    branch: kirkstone
+    layers:
+      meta-networking:
+      meta-oe:
+      meta-perl:
+      meta-python:
+
   meta-raspberrypi:
     url: https://git.yoctoproject.org/meta-raspberrypi
     commit: 43683cb14b6afc144619335b3a2353b70762ff3e
+    branch: kirkstone
+
+  meta-security:
+    url: https://git.yoctoproject.org/meta-security
+    commit: 1a3e42cedbd94ca73be45800d0e902fec35d0f0f
     branch: kirkstone
 
 local_conf_header:
