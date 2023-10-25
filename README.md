@@ -1,7 +1,7 @@
 # meta-pipi
 
-meta-pipi is a Yocto example project initiated privately by Pascal Linder. It is used to try out
-different features on a Raspberry Pi 4 board.
+meta-pipi is a Yocto example project initiated by Pascal Linder. It is used to try out different
+features on a Raspberry Pi 4 board.
 
 ## PiPi Distribution and Image
 
