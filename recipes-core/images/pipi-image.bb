@@ -8,6 +8,10 @@ IMAGE_FEATURES = " \
     read-only-rootfs \
 "
 
+IMAGE_INSTALL:append = " \
+    rust-hello-world \
+"
+
 EXTRA_USERS_PARAMS = " \
     usermod -p '\$6\$92TvUxAgcV/5o63r\$Esx3xAUPu8Ltun6LwsaSuxGi/tAFEx2t9Bf1MLk8woKz0qvmo1B2olM1GDaCYHhR/Ve6vKP1T0P5MrXLwoxlE.' root; \
 "

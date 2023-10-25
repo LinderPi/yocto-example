@@ -1,0 +1,8 @@
+header:
+  version: 14
+
+repos:
+  meta-rust:
+    url: https://github.com/meta-rust/meta-rust.git
+    commit: d42984ff9a9fad9ced37d95a89af1b2b84f957e9
+    branch: master
