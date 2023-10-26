@@ -6,7 +6,7 @@ if [[ $# -lt 2 ]]; then
     exit 1
 fi
 
-path=$(readlink -f $(dirname $BASH_SOURCE))
+path=$(readlink -f $(dirname $BASH_SOURCE)/..)
 image_path=$path/build/tmp/deploy/images/raspberrypi4/$1-raspberrypi4.wic.bz2
 sd_path=$2
 
