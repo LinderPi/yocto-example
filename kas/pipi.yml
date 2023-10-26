@@ -2,6 +2,7 @@ header:
   version: 14
   includes:
     - rust.yml
+    - security.yml
 
 machine: raspberrypi4
 distro: pipi
@@ -32,12 +33,7 @@ repos:
     commit: 43683cb14b6afc144619335b3a2353b70762ff3e
     branch: kirkstone
 
-  meta-security:
-    url: https://git.yoctoproject.org/meta-security
-    commit: 1a3e42cedbd94ca73be45800d0e902fec35d0f0f
-    branch: kirkstone
-
 local_conf_header:
-  meta-pipi: |
+  raspberrypi: |
     ENABLE_UART = "1"
     RPI_USE_U_BOOT = "1"
